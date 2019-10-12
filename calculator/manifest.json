@@ -1,0 +1,113 @@
+{
+    "dir": "ltr",
+    "lang": "en",
+    "name": "calculator",
+    "scope": "/web-class/calculator/",
+    "display": "standalone",
+    "start_url": "https://kerrongordon.github.io/web-class/calculator/",
+    "short_name": "calculator",
+    "theme_color": "transparent",
+    "description": "calculator Demo",
+    "orientation": "any",
+    "background_color": "transparent",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "web/images/35a57c29-2928-20cd-8bfe-e544693d834e.webPlatform.png",
+            "sizes": "44x44",
+            "type": "image/png"
+        },
+        {
+            "src": "web/images/f09ca342-b271-f054-de48-8daf3676df7a.webPlatform.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        },
+        {
+            "src": "web/images/9060ef2a-274f-adc1-56fe-27d5732da7db.webPlatform.png",
+            "sizes": "1240x600",
+            "type": "image/png"
+        },
+        {
+            "src": "web/images/ed44107f-47ce-9c8a-28d0-0d2ff503a709.webPlatform.png",
+            "sizes": "300x300",
+            "type": "image/png"
+        },
+        {
+            "src": "web/images/4ea8658e-a142-6ed6-d291-53453c3e602d.webPlatform.png",
+            "sizes": "150x150",
+            "type": "image/png"
+        },
+        {
+            "src": "web/images/6b08e60f-cbb1-9a0b-8d61-0ccc946df6d2.webPlatform.png",
+            "sizes": "88x88",
+            "type": "image/png"
+        },
+        {
+            "src": "web/images/b6812c23-70ca-978d-f1da-643eab222ace.webPlatform.png",
+            "sizes": "24x24",
+            "type": "image/png"
+        },
+        {
+            "src": "web/images/a5aace8e-487e-3905-89b5-8301ee07440c.webPlatform.png",
+            "sizes": "50x50",
+            "type": "image/png"
+        },
+        {
+            "src": "web/images/77467d25-dbdc-a1f0-33aa-39a48a8264ad.webPlatform.png",
+            "sizes": "620x300",
+            "type": "image/png"
+        },
+        {
+            "src": "web/images/5af90c33-6ec8-c2a0-a388-d1a31f0076dd.webPlatform.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "web/images/a3a49ef4-b4df-e653-4d48-80c7ba5d9338.webPlatform.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "web/images/b5406ab1-f0fb-6ee5-8bcc-b5bb02c052fd.webPlatform.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "web/images/c4da083b-d278-4002-d993-3de01068fbf7.webPlatform.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        },
+        {
+            "src": "web/images/368ccd0b-0f74-e21c-0e0a-3897b782d9cb.webPlatform.png",
+            "sizes": "36x36",
+            "type": "image/png"
+        },
+        {
+            "src": "web/images/572fa562-7618-9fcf-ebaf-dfd51fb12bc2.webPlatform.png",
+            "sizes": "1024x1024",
+            "type": "image/png"
+        },
+        {
+            "src": "web/images/8d23bc6a-5e3d-2b70-90ce-0526caae1e68.webPlatform.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        },
+        {
+            "src": "web/images/b109be5b-6e30-5332-bc91-48b93976d4ab.webPlatform.png",
+            "sizes": "152x152",
+            "type": "image/png"
+        },
+        {
+            "src": "web/images/c3aaa026-373f-415a-0b29-95db8bc3a38e.webPlatform.png",
+            "sizes": "120x120",
+            "type": "image/png"
+        },
+        {
+            "src": "web/images/349f5193-634b-8cfa-f5fc-fda186e1a61a.webPlatform.png",
+            "sizes": "76x76",
+            "type": "image/png"
+        }
+    ],
+    "screenshots": []
+}
