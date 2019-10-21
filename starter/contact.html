@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="This is where the website description goes"
+    />
+    <title>Document</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Tangerine&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="page">
+      <nav class="navbar">
+        <div class="container">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <header class="herder">
+        <h1>Contact Us</h1>
+        <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h3>
+      </header>
+
+      <main>
+        <div class="container">
+
+          <form id="form" method="post">
+
+            <label for="username">Your Name</label>
+            <input class="input" type="text" name="username" id="username">
+
+            <label for="usersubject">Subject</label>
+            <input class="input" type="text" name="usersubject" id="usersubject">
+
+            <label for="useremail">Your Email</label>
+            <input class="input" type="email" name="useremail" id="useremail">
+
+            <label for="usermessage">Your Message</label>
+            <textarea class="input" name="usermessage" id="usermessage"></textarea>
+
+            <input class="btn" type="submit" id="submit" value="Send">
+          </form>
+
+        </div>
+      </main>
+
+      <footer>
+        <p>Copyright &#9400; 2019 By Company Name</p>
+      </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
