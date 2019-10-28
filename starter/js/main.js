@@ -1,24 +1,24 @@
+/*jshint esversion: 6 */
 
 window.onload=function() { 
 
-const submit = document.getElementById('submit');
-const hero = document.getElementById('hero');
+const form = document.getElementById('form');
 
-    if (submit) {
-        submit.addEventListener('click', function(even) {
-            even.preventDefault()
-        });
+const runForm = (e) => {
+    e.preventDefault();
+    const formItem = e.target;
+
+    console.log(formItem);
+
+    for (let i = 0; i < formItem.length; i++) {
+        const element = formItem[i].value;
+        data.push(element);        
     }
+};
 
+if (form) {
+    form.addEventListener('submit', runForm);
+}
 
-    if (hero) {
-        console.log(hero);
-        
-        hero.addEventListener('mousemove', function(even){
-            console.log('x ', even.screenX / 10 );
-            console.log('y ', even.screenY / 10 );
-
-            hero.style.backgroundPosition = `0px ${-even.screenY / 10}px`
-        })
-    }
+   
 };
