@@ -12,6 +12,7 @@ const runForm = (e) => {
 
     for (let i = 0; i < formItem.length; i++) {
         const element = formItem[i].value;
+        console.log(element);
         data.push(element);        
     }
 };
