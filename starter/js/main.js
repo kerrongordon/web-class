@@ -8,12 +8,12 @@ const runForm = (e) => {
     e.preventDefault();
     const formItem = e.target;
 
-    console.log(formItem);
+    // console.log(formItem);
 
     for (let i = 0; i < formItem.length; i++) {
         const element = formItem[i].value;
         console.log(element);
-        data.push(element);        
+        // data.push(element);        
     }
 };
 
