@@ -1,6 +1,6 @@
 /*jshint esversion: 6 */
 
-window.onload=function() { 
+window.onload = function() { 
 
 const form = document.getElementById('form');
 
@@ -8,7 +8,8 @@ const runForm = (e) => {
     e.preventDefault();
     const formItem = e.target;
 
-    // console.log(formItem);
+    // console.log(e);
+    console.log(formItem);
 
     for (let i = 0; i < formItem.length; i++) {
         const element = formItem[i].value;
