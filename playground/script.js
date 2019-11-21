@@ -27,11 +27,11 @@ function doWeHaveAName(name, type) {
 }
 
 function openPrompt() {
-    let firstName = enterName('First').trim();
+    let firstName = enterName('First');
 
     firstName = doWeHaveAName(firstName, 'First');
 
-    let LastName = prompt(`Hi ${firstName} What is your last name`).trim();
+    let LastName = prompt(`Hi ${firstName} What is your last name`);
 
     LastName = doWeHaveAName(LastName, 'Last');
 
