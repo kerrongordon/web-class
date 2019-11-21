@@ -16,13 +16,14 @@ img {
 }
 
 .navbar {
-    background-color: #483837;
+    background-color: rgba(72, 56, 55, 0.8);
     padding: 0.842em;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.62);
+    backdrop-filter: blur(0.8em);
 }
 
 ul {
