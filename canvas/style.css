@@ -69,8 +69,12 @@ input {
   border: none;
   border-radius: 50%;
   font-size: 34px;
-  background-color: blue;
+  background-color: #0078d7;
   color: white;
   outline: none;
   cursor: pointer;
+}
+
+.btn img {
+  width: 25px;
 }
