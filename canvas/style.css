@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#myCanvas {
+  position: fixed;
+}
+
+.colorPicker {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  overflow: hidden;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.colorPicker::-webkit-color-swatch {
+  border: none;
+  border-radius: 10px;
+  padding: 0;
+}
+.colorPicker::-webkit-color-swatch-wrapper {
+  border: none;
+  border-radius: 10px;
+  padding: 0;
+}
+
+.toolBar {
+  left: 50%;
+  bottom: 20px;
+  display: grid;
+  grid-gap: 1em;
+  position: absolute;
+  border-radius: 50px;
+  align-items: center;
+  transform: translateX(-50%);
+  backdrop-filter: blur(0.7em);
+  grid-template-columns: repeat(4, 1fr);
+  background-color: rgba(19, 27, 53, 0.3);
+  border: solid 1px rgba(62, 61, 61, 0.35);
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.37);
+}
+
+.toolBar div {
+  display: grid;
+  padding: 0.5em;
+}
+
+.center {
+  justify-items: center;
+}
+
+.end {
+  justify-items: end;
+}
+
+input {
+  cursor: pointer;
+}
+
+.btn {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  font-size: 34px;
+  background-color: blue;
+  color: white;
+  outline: none;
+  cursor: pointer;
+}
