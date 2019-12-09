@@ -96,14 +96,15 @@ window.addEventListener('load', () => {
     }
 
 
-    myCanvas.addEventListener('mousedown', startDrawing)
-    myCanvas.addEventListener('mouseup', stopDrawing)
-    myCanvas.addEventListener('mousemove', draw)
-
     // for touch screen 
     myCanvas.addEventListener('touchstart', startDrawing)
     myCanvas.addEventListener('touchend', stopDrawing)
     myCanvas.addEventListener('touchmove', draw)
+
+    // for mouse 
+    myCanvas.addEventListener('mousedown', startDrawing)
+    myCanvas.addEventListener('mouseup', stopDrawing)
+    myCanvas.addEventListener('mousemove', draw)
 
 
     const downloadImage = () => {
