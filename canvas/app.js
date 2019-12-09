@@ -100,6 +100,11 @@ window.addEventListener('load', () => {
     myCanvas.addEventListener('mouseup', stopDrawing)
     myCanvas.addEventListener('mousemove', draw)
 
+    // for touch screen 
+    myCanvas.addEventListener('touchstart', startDrawing)
+    myCanvas.addEventListener('touchend', stopDrawing)
+    myCanvas.addEventListener('touchmove', draw)
+
 
     const downloadImage = () => {
         const image = myCanvas.toDataURL('image/png');
