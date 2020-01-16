@@ -2,26 +2,23 @@
 
     if ($_POST) {
 
-        $to = $_POST['sendto'];
+        $email = $_POST['email'];
 
         $name = $_POST['name'];
-        $email = $_POST['email'];
         $phone = $_POST['phone'];
         $content = $_POST['message'];
 
         $subject = 'You Got An Email From ' . $name;
 
-        $message =  "Name: " . $name . "\n" . "Phone: " . $phone . "\n" . "Email: " . $email . "\n" . "Message: " . $content;
+        $headers = 'From: '. $name . "\r\n" . 'Reply-To: '. $email . "\r\n";
+
+        $message =  "Name: " . $name . "\r\n" . "Phone: " . $phone . "\r\n" . "Email: " . $email . "\r\n" . "Message: " . $content;
 
 
-        mail($to, $subject, $message);
+        mail($email, $subject, $message);
 
 
     }
-
-    
-
-
 
 ?>
 
@@ -36,11 +33,14 @@
 <body>
     
     <form action="index.php" method="post">
-        <input name="sendto" placeholder="Send to email">
+        <input name="email" placeholder="Send to email">
+        <br>
         <input name="name" placeholder="User name">
-        <input name="email" placeholder="User Email">
+        <br>
         <input name="phone" placeholder="User Phone" type="number">
+        <br>
         <input name="message" placeholder="User Message">
+        <br>
         <input type="submit" value="send">
     </form>
 
