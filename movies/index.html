@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
             padding: 0;
             box-sizing: border-box;
         }
+
         from {
             width: 400px;
             background-color: aqua;
@@ -20,12 +22,14 @@
             margin: 100px auto;
             padding: 20px;
         }
+
         .fromItem {
             padding: 20px;
         }
     </style>
 
 </head>
+
 <body>
     <from>
         <div class="fromItem">
@@ -39,52 +43,72 @@
         <button type="submit" id="saveBtn">Save</button>
     </from>
 
-    <div class="output">
-        <pre></pre>
-    </div>
+    <table id="output" style="width:100%">
+        <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+    </table>
 
     <script>
         window.addEventListener('DOMContentLoaded', () => {
 
 
             const saveBtn = document.getElementById('saveBtn');
+            let table = document.getElementById('output');
 
             saveBtn.addEventListener('click', saveItem);
 
 
-        });
 
-        const getNameFromDatabase = JSON.parse(localStorage.getItem('names'));
+            const getNameFromDatabase = JSON.parse(localStorage.getItem('names'));
 
-        names = []
+            names = []
 
-        getNameFromDatabase != null ? names = getNameFromDatabase : names = []
+            getNameFromDatabase != null ? names = getNameFromDatabase : names = []
 
-        // names.map((data) => {
-        //     console.log(data.id);
-        // });
 
-        function saveItem(event) {
-            event.preventDefault();
 
-            const firstName = document.getElementById('first_name');
-            const lastName = document.getElementById('last_name');
 
-            let name = {
-                id: Date.now(),
-                fname: firstName.value,
-                lname: lastName.value
+            function addTotable() {
+                names.map((data) => {
+                    let row = table.insertRow(1);
+                    let cell0 = row.insertCell(0);
+                    let cell1 = row.insertCell(1);
+                    let cell2 = row.insertCell(2);
+
+                    cell0.innerHTML = data.id;
+                    cell1.innerHTML = data.fname;
+                    cell2.innerHTML = data.lname;
+                });
             }
 
-            names.push(name);
+            addTotable();
 
-            console.log(names);
 
-            localStorage.setItem('names', JSON.stringify(names))
-          
-        }
+            function saveItem(event) {
+                event.preventDefault();
 
-        
+                const firstName = document.getElementById('first_name');
+                const lastName = document.getElementById('last_name');
+
+                let name = {
+                    id: Date.now(),
+                    fname: firstName.value,
+                    lname: lastName.value
+                }
+
+                names.push(name);
+
+                console.log(names);
+
+                localStorage.setItem('names', JSON.stringify(names))
+                addTotable();
+            }
+
+        });
     </script>
 </body>
+
 </html>
