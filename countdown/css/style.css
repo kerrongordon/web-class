@@ -1,0 +1,7 @@
+svg {
+    transform: rotate(-85deg);
+}
+
+svg circle {
+    fill: none;
+}
