@@ -1,21 +1,12 @@
-document.addEventListener('DOMContentLoaded', function() {
-
-
-    // getToDayDate();
-
-});
-
-const max = 508;
-const min = 0;
-let count = 100;
-const shape = document.getElementById('shape');
+let timer = 60;
+const numcount = document.getElementById('numcount');
 
 setInterval(() => {
-    shape.setAttribute('stroke-dashoffset', count = count + 8.4);
-    console.log(count);
 
-    if (count >= max) {
-        count = 100;
+    numcount.innerHTML = timer = timer - 1;
+
+    if (timer <= 0) {
+        timer = 60;
     }
 
 }, 1000);
