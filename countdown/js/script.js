@@ -1,4 +1,4 @@
-let timer = 60;
+let timeOfday = 'AM'
 const numcount = document.getElementById('numcount');
 
 setInterval(() => {
@@ -8,10 +8,15 @@ setInterval(() => {
     let minutes = addZerotofront(date.getMinutes());
     let seconds = addZerotofront(date.getSeconds());
 
-    numcount.innerHTML = `${hours}:${minutes}:${seconds}`;
+
+    if (hours > 12) {
+        hours = hours - 12;
+        timeOfday = "PM"
+    }
+
+    numcount.innerHTML = `${hours}:${minutes}:${seconds} ${timeOfday}`;
 
 }, 1000);
-
 
 
 function addZerotofront(number) {
