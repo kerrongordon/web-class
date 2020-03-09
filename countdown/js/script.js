@@ -13,6 +13,10 @@ setInterval(() => {
         hours = hours - 12;
         timeOfday = "PM"
     }
+    
+    if (hours === 15 && minutes === 05) {
+        numcount.innerHTML = 'Break Time';
+    }
 
     numcount.innerHTML = `${hours}:${minutes}:${seconds} ${timeOfday}`;
 
