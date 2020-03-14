@@ -1,6 +1,7 @@
 body {
     overflow: hidden;
     background-color: #f37329;
+    /* background: url('./../img/1.jpg') center center / cover; */
 }
 
 .box {

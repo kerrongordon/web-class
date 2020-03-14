@@ -1,5 +1,6 @@
 let timeOfday = 'AM'
 const numcount = document.getElementById('numcount');
+// let imgCount = 0;
 
 setInterval(() => {
 
@@ -12,17 +13,26 @@ setInterval(() => {
     if (hours > 12) {
         hours = hours - 12;
         timeOfday = "PM";
-        
+
         if (hours === 3) {
             numcount.innerHTML = 'Break Time';
         } else {
-              numcount.innerHTML = `${hours}:${minutes}:${seconds} ${timeOfday}`;
+            numcount.innerHTML = `${hours}:${minutes}:${seconds} ${timeOfday}`;
         }
-    }
-    
-    
+    } else {
 
-  
+        numcount.innerHTML = `${hours}:${minutes}:${seconds} ${timeOfday}`;
+    }
+
+
+    // imgCount++;
+
+    // let test = 60 / imgCount;
+
+    // document.body.style.backgroundImage = `url('./../img/${imgCount}.jpg')`;
+    // console.log(Math.round(test));
+
+
 
 }, 1000);
 
